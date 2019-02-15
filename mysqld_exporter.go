@@ -59,11 +59,11 @@ var (
 // scrapers lists all possible collection methods and if they should be enabled by default.
 var scrapers = map[collector.Scraper]bool{
 	collector.ScrapeGlobalStatus{}:                    true,
-	collector.ScrapeGlobalVariables{}:                 true,
+	collector.ScrapeGlobalVariables{}:                 false,
 	collector.ScrapeSlaveStatus{}:                     true,
 	collector.ScrapeProcesslist{}:                     false,
 	collector.ScrapeUser{}:                            false,
-	collector.ScrapeTableSchema{}:                     true,
+	collector.ScrapeTableSchema{}:                     false,
 	collector.ScrapeInfoSchemaInnodbTablespaces{}:     false,
 	collector.ScrapeInnodbMetrics{}:                   false,
 	collector.ScrapeAutoIncrementColumns{}:            false,
